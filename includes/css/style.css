@@ -1,0 +1,19 @@
+.clear{
+  clear:both;
+}
+/* METABOX  */
+.xpo-float-left{
+  float:left;
+}
+
+.xpo-float-right{
+  float:right;
+}
+
+.xpo-form-container{
+  width:50%;
+}
+
+.xpo-form-element{
+  width:100%;
+}

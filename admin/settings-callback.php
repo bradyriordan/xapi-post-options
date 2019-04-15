@@ -110,6 +110,22 @@ function xpo_callback_field_textarea( $args ) {
 
 }
 
+function xpo_callback_field_button( $args ) {
+
+	$options = get_option( 'xpo_options', xpo_options_default() );
+	
+	$id    = isset( $args['id'] )    ? $args['id']    : '';
+	$label = isset( $args['label'] ) ? $args['label'] : '';
+	
+	$allowed_tags = wp_kses_allowed_html( 'post' );
+	
+	$value = isset( $options[$id] ) ? wp_kses( stripslashes_deep( $options[$id] ), $allowed_tags ) : '';
+	
+	echo '<input id="xpo_options_'. $id .'" name="xpo_options['. $id .']" type="button" value="' . $label . '"> ';
+	echo '<label for="xpo_options_'. $id .'">'. $label .'</label>';
+
+}
+
 
 // callback: checkbox field
 function xpo_callback_field_checkbox( $args ) {
@@ -140,13 +156,11 @@ function xpo_callback_field_select( $args ) {
 	// select field values
 	$select_options_actor = array(
 		
-		'not-set'   => 'Not set',
-		'user-id'     => 'User id',
-		'full-name'   => 'Full name',
-		'username'      => 'Username',
-		'email'    => 'Email',
-		'anonymous' => 'Anonymous',
-		
+		'not-set'   => 'not set',
+		'mbox'     => 'mbox',
+		'mbox_sha1sum'   => 'mbox_sha1sum',
+		'account'      => 'account',
+		'openid'    => 'openid',	
 		
 	);
 	

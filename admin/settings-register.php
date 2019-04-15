@@ -111,6 +111,15 @@ function xpo_register_settings() {
 		'xpo_lrs_details',
 		[ 'id' => 'lrs_password', 'label' => 'LRS Password' ]
 	);
+	
+	add_settings_field(
+		'lrs_connection',
+		'Test LRS connection',
+		'xpo_callback_field_checkbox',
+		'xpo-settings',
+		'xpo_lrs_details',
+		[ 'id' => 'lrs_connection', 'label' => 'LRS Connection' ]
+	);
 
 }
 add_action( 'admin_init', 'xpo_register_settings' );
