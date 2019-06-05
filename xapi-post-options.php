@@ -5,7 +5,7 @@ Description:       This plugin facilitates sending xAPI statements to an LRS fro
 Plugin URI:        https://
 Contributors:      Team-Wordpress-Plugin Spring 2019, Brady Riordan, Bob Robinson, Helena Smith, Eric Brott, Amy Parent
 Author:            Team-Wordpress-Plugin Spring 2019
-Author URI:        https://url.com
+Author URI:        https://bradyriordan.com
 Tags:              xAPI, eLearning, LRS
 Version:           1.0
 Stable tag:        1.0
