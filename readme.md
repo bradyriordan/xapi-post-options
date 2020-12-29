@@ -1,6 +1,6 @@
 # xAPI Post Options
 
-xAPI Post Options is a WordPress plugin that allows admininstrators to send custom xAPI statements from any post type. This is the only plugin that supports configuring the actor, verb, and object elements at the post level. Statements are fired based on JavaScript events that can be configured directly in a post. Data is persisted in a learning record store (LRS) that can be configured on the plugin settings page
+xAPI Post Options is a WordPress plugin that allows admininstrators to send custom xAPI statements from any post type. This is the only plugin that supports configuring the actor, verb, and object elements at the post level. Statements are fired based on JavaScript events that can be configured directly in a post. Data is persisted in a learning record store (LRS) that can be configured on the plugin settings page.
 
 ## Features
 - Configure LRS endpoint, username and password on the plugin settings page. Statements are sent server-side, no credentials are exposed in the DOM.
